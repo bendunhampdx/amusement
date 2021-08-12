@@ -1,27 +1,29 @@
 $(document).ready(function() {
   const height = parseFloat(prompt("How tall are you...No lying!"));
 
-//   if (height <= 5.2) {
-//     $('#short').show();
-//     $('#default').hide(); 
-//   } else if (height >= 6.1) {
-//     $('#tall').show();
-//     $('#default').hide(); 
-//   } else {
-//     $('#average').show();
-//     $('#default').hide(); 
-//   }
-// });
+  if (height <= 5.2) {
+    $('#short').show();
+    $('#default').hide(); 
+  } else if (height >= 6.1) {
+    $('#tall').show();
+    $('#default').hide(); 
+  } else {
+    $('#average').show();
+    $('#default').hide(); 
+  }
 
 if (height <= 5.2) {
-  $('#initiallyHidden').show();
-  $('#initiallyVisible').hide(); 
+  $("#scary-slide").css("background-color", "#EEBD20");
+  $("#grandma-swing").css("background-color", "#EEBD20");
 } else if (height >= 6.1) {
-  $('#tall').show();
-  $('#default').hide(); 
+  $("#grandma-swing").css("background-color", "#EEBD20");
+  $("#whirly-gig").css("background-color", "#EEBD20");
+  $("#mouse-trap").css("background-color", "#EEBD20");
 } else {
-  $('#average').show();
-  $('#default').hide(); 
+  $("#scary-slide").css("background-color", "#EEBD20");
+  $("#grandma-swing").css("background-color", "#EEBD20");
+  $("#whirly-gig").css("background-color", "#EEBD20");
+  $("#mouse-trap").css("background-color", "#EEBD20");
 }
 });
 
